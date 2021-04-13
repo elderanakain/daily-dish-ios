@@ -1,0 +1,22 @@
+PODS:
+  - common (1.0.9)
+
+DEPENDENCIES:
+  - "common (from `git@github.com:elderanakain/daily-dish-framework.git`, branch `master`)"
+
+EXTERNAL SOURCES:
+  common:
+    :branch: master
+    :git: "git@github.com:elderanakain/daily-dish-framework.git"
+
+CHECKOUT OPTIONS:
+  common:
+    :commit: 22ec75ec362b55944cb43ab7ec0b8e784ca01af8
+    :git: "git@github.com:elderanakain/daily-dish-framework.git"
+
+SPEC CHECKSUMS:
+  common: 9101555c2e6d39f5128be744a35f7fe4ebd35f80
+
+PODFILE CHECKSUM: 9e12cd5fdeafae5237b788e29a183a0979990d3e
+
+COCOAPODS: 1.10.1
