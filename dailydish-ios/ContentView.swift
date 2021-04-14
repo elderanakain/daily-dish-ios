@@ -1,18 +1,19 @@
-//
-//  ContentView.swift
-//  dailydish-ios
-//
-//  Created by Arcadii Rubailo on 12/04/2021.
-//
-
 import SwiftUI
+import common
 
 struct ContentView: View {
+    var repository = koin.mealRepository
+    
+    @State var mealsText = String("")
     
     var body: some View {
-
-        Text("Hello, world!")
+        return Text(mealsText)
             .padding()
+            .onAppear(perform: {
+                repository.fetch { (unit, error) -> Void in
+                    mealsText = repository.meals.map { $0.title }.joined()
+                }
+            })
     }
 }
 

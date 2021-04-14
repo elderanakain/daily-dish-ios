@@ -3,19 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5027144F26248154004295B8 /* dailydish_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5027144E26248154004295B8 /* dailydish_iosApp.swift */; };
 		5027145126248154004295B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5027145026248154004295B8 /* ContentView.swift */; };
 		5027145326248155004295B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5027145226248155004295B8 /* Assets.xcassets */; };
 		5027145626248155004295B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5027145526248155004295B8 /* Preview Assets.xcassets */; };
-		A87B851A0A927FFA55271FFC /* Pods_dailydish_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51DFBE0BA28DBDEBD5D2ECAF /* Pods_dailydish_ios.framework */; };
+		50EDEF11270DE6A40055A2F1 /* common in Frameworks */ = {isa = PBXBuildFile; productRef = 50EDEF10270DE6A40055A2F1 /* common */; };
+		50FD619E2625F78000C91825 /* Koin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FD619D2625F78000C91825 /* Koin.swift */; };
+		50FD61A2262600AE00C91825 /* dailydish_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FD61A1262600AE00C91825 /* dailydish_iosApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		502714812624A2DB004295B8 /* Embed Frameworks */ = {
+		500DA7602626C6700025827D /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
@@ -29,14 +30,12 @@
 
 /* Begin PBXFileReference section */
 		5027144B26248154004295B8 /* dailydish-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dailydish-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5027144E26248154004295B8 /* dailydish_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dailydish_iosApp.swift; sourceTree = "<group>"; };
 		5027145026248154004295B8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5027145226248155004295B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5027145526248155004295B8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5027145726248155004295B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		51DFBE0BA28DBDEBD5D2ECAF /* Pods_dailydish_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dailydish_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		83C1A628D18A65C34ED7CFD7 /* Pods-dailydish-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dailydish-ios.release.xcconfig"; path = "Target Support Files/Pods-dailydish-ios/Pods-dailydish-ios.release.xcconfig"; sourceTree = "<group>"; };
-		B74C9B077327F42CCD3E3249 /* Pods-dailydish-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dailydish-ios.debug.xcconfig"; path = "Target Support Files/Pods-dailydish-ios/Pods-dailydish-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		50FD619D2625F78000C91825 /* Koin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Koin.swift; sourceTree = "<group>"; };
+		50FD61A1262600AE00C91825 /* dailydish_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dailydish_iosApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A87B851A0A927FFA55271FFC /* Pods_dailydish_ios.framework in Frameworks */,
+				50EDEF11270DE6A40055A2F1 /* common in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,8 +55,6 @@
 			children = (
 				5027144D26248154004295B8 /* dailydish-ios */,
 				5027144C26248154004295B8 /* Products */,
-				5027145E2624864D004295B8 /* Frameworks */,
-				80AF8E530EAFF471BE566C48 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,11 +69,12 @@
 		5027144D26248154004295B8 /* dailydish-ios */ = {
 			isa = PBXGroup;
 			children = (
-				5027144E26248154004295B8 /* dailydish_iosApp.swift */,
 				5027145026248154004295B8 /* ContentView.swift */,
 				5027145226248155004295B8 /* Assets.xcassets */,
 				5027145726248155004295B8 /* Info.plist */,
 				5027145426248155004295B8 /* Preview Content */,
+				50FD619D2625F78000C91825 /* Koin.swift */,
+				50FD61A1262600AE00C91825 /* dailydish_iosApp.swift */,
 			);
 			path = "dailydish-ios";
 			sourceTree = "<group>";
@@ -89,23 +87,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		5027145E2624864D004295B8 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				51DFBE0BA28DBDEBD5D2ECAF /* Pods_dailydish_ios.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		80AF8E530EAFF471BE566C48 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B74C9B077327F42CCD3E3249 /* Pods-dailydish-ios.debug.xcconfig */,
-				83C1A628D18A65C34ED7CFD7 /* Pods-dailydish-ios.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,18 +94,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5027145A26248155004295B8 /* Build configuration list for PBXNativeTarget "dailydish-ios" */;
 			buildPhases = (
-				3ECFE17C0A89D70E97A98FD0 /* [CP] Check Pods Manifest.lock */,
 				5027144726248154004295B8 /* Sources */,
 				5027144826248154004295B8 /* Frameworks */,
 				5027144926248154004295B8 /* Resources */,
-				502714812624A2DB004295B8 /* Embed Frameworks */,
-				11EB9414226160AE599C2CC0 /* [CP] Embed Pods Frameworks */,
+				500DA7602626C6700025827D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "dailydish-ios";
+			packageProductDependencies = (
+				50EDEF10270DE6A40055A2F1 /* common */,
+			);
 			productName = "dailydish-ios";
 			productReference = 5027144B26248154004295B8 /* dailydish-ios.app */;
 			productType = "com.apple.product-type.application";
@@ -152,6 +134,9 @@
 				Base,
 			);
 			mainGroup = 5027144226248154004295B8;
+			packageReferences = (
+				50EDEF0F270DE6A40055A2F1 /* XCRemoteSwiftPackageReference "daily-dish-package.git" */,
+			);
 			productRefGroup = 5027144C26248154004295B8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -173,55 +158,14 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		11EB9414226160AE599C2CC0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-dailydish-ios/Pods-dailydish-ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-dailydish-ios/Pods-dailydish-ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-dailydish-ios/Pods-dailydish-ios-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3ECFE17C0A89D70E97A98FD0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-dailydish-ios-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		5027144726248154004295B8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50FD61A2262600AE00C91825 /* dailydish_iosApp.swift in Sources */,
+				50FD619E2625F78000C91825 /* Koin.swift in Sources */,
 				5027145126248154004295B8 /* ContentView.swift in Sources */,
-				5027144F26248154004295B8 /* dailydish_iosApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +223,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -334,7 +278,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -346,7 +290,6 @@
 		};
 		5027145B26248155004295B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B74C9B077327F42CCD3E3249 /* Pods-dailydish-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -368,7 +311,6 @@
 		};
 		5027145C26248155004295B8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83C1A628D18A65C34ED7CFD7 /* Pods-dailydish-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -410,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		50EDEF0F270DE6A40055A2F1 /* XCRemoteSwiftPackageReference "daily-dish-package.git" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elderanakain/daily-dish-package.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		50EDEF10270DE6A40055A2F1 /* common */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 50EDEF0F270DE6A40055A2F1 /* XCRemoteSwiftPackageReference "daily-dish-package.git" */;
+			productName = common;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5027144326248154004295B8 /* Project object */;
 }
